@@ -1,126 +1,131 @@
+/* Resetando estilos padrão */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Estilos do corpo */
 body {
-  background: #f8f8f8;
-  color: #333;
-  padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
+/* Cabeçalho */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222;
-  color: #fff;
-  padding: 15px 20px;
-  border-radius: 6px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-  font-size: 1.8rem;
+header .logo h1 {
+    margin: 0;
 }
 
-nav a {
-  color: #fff;
-  margin-left: 15px;
-  text-decoration: none;
-  font-weight: bold;
+header nav ul {
+    list-style: none;
+    display: flex;
 }
 
-nav a:hover {
-  text-decoration: underline;
+header nav ul li {
+    margin-left: 20px;
 }
 
-h2 {
-  margin-bottom: 15px;
-  color: #444;
+header nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
-.produtos-lista {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+/* Seção de Produtos */
+#produtos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#produtos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .produto {
-  background: white;
-  padding: 15px;
-  border-radius: 6px;
-  box-shadow: 0 3px 7px rgba(0,0,0,0.1);
-  text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
 }
 
 .produto img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-.produto h3 {
-  margin-bottom: 8px;
-  color: #222;
-}
-
-.produto p {
-  font-size: 1rem;
-  color: #666;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .produto button {
-  margin-top: 10px;
-  padding: 8px 12px;
-  background-color: #222;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .produto button:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
+/* Seção de Contato */
 #contato {
-  margin-top: 40px;
-  max-width: 400px;
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-#contato-form label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: bold;
+#contato h2 {
+    margin-bottom: 20px;
 }
 
-#contato-form input,
-#contato-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-#contato-form button {
-  padding: 10px 20px;
-  background-color: #222;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+#contato input, #contato textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-#contato-form button:hover {
-  background-color: #555;
+#contato button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+#contato button:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
 footer {
-  margin-top: 50px;
-  text-align: center;
-  color: #999;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
